@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+	{% for Project in Projects %}
+	<div>
+		<h2><a href ="/projects/get/{{ Project.id }}/">{{ Project.title }}</a></h2>
+		<p> {{ Project.technologies_used }}</p>
+	</div>
+	{% endfor %}
+{% endblock %}
