@@ -7,7 +7,7 @@ from django.db import models
 class Projects(models.Model):
 	title = models.CharField(max_length = 200)
 	body = models.TextField()
-	technologies_used = models.CharField(max_length = 10)
+	technologies_used = models.CharField(max_length = 20)
 	pub_date = models.DateTimeField('date published')
 
 def __unicode__(self):
